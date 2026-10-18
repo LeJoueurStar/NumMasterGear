@@ -1,5 +1,7 @@
 # NumMasterGear
 
+*English: [README.en.md](README.en.md)*
+
 Émulateur **Sega Master System** et **Game Gear** pour la calculatrice **NumWorks** (N0110, N0115, N0120).
 
 Il se présente comme une application `.nwa` : tu envoies l'application et ta ROM sur [my.numworks.com/apps](https://my.numworks.com/apps), et le jeu se lance depuis le menu de la calculatrice.
@@ -64,4 +66,4 @@ Ce projet ne contient aucune ROM de jeu. Tu dois utiliser tes propres cartouches
 
 ## Licence
 
-Ce projet est distribué sous la licence **GPL-3.0** (voir [LICENSE](LICENSE)), à l'exception du fichier `src/sms/z80.c`, qui reste sous la licence de son auteur (Juergen Buchmueller, puis R. Danbrook) : usage gratuit et non commercial, avec crédit. Les autres fichiers repris gardent leurs licences d'origine (voir [CREDITS.md](CREDITS.md)). Les composants repris gardent leurs licences d'origine (voir [CREDITS.md](CREDITS.md)).
+Ce projet est distribué sous la licence **GPL-3.0** (voir [LICENSE](LICENSE)), à l'exception du fichier `src/sms/z80.c`, qui reste sous la licence de son auteur (Juergen Buchmueller, puis R. Danbrook) : usage gratuit et non commercial, avec crédit. Les autres fichiers repris gardent leurs licences d'origine (voir [CREDITS.md](CREDITS.md)).
