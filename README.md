@@ -21,7 +21,7 @@ Il se présente comme une application `.nwa` : tu envoies l'application et ta RO
 | OK | Bouton 1 |
 | Retour | Bouton 2 |
 | Retour arrière | Start (Game Gear) |
-| EXE | Pause |
+| EXE | Pause (Master System uniquement ; sur Game Gear, utiliser Retour arrière) |
 | π | Réinitialiser le jeu |
 | + / - | Remplir l'écran / taille d'origine |
 | 1 / 2 / 3 / 4 / . | Vitesse x1 / x2 / x3 / x4 / x1,5 |
