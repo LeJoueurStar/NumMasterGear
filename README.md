@@ -64,4 +64,4 @@ Ce projet ne contient aucune ROM de jeu. Tu dois utiliser tes propres cartouches
 
 ## Licence
 
-Ce projet est distribué sous la licence **GPL-3.0** (voir [LICENSE](LICENSE)). Les composants repris gardent leurs licences d'origine (voir [CREDITS.md](CREDITS.md)).
+Ce projet est distribué sous la licence **GPL-3.0** (voir [LICENSE](LICENSE)), à l'exception du fichier `src/sms/z80.c`, qui reste sous la licence de son auteur (Juergen Buchmueller, puis R. Danbrook) : usage gratuit et non commercial, avec crédit. Les autres fichiers repris gardent leurs licences d'origine (voir [CREDITS.md](CREDITS.md)). Les composants repris gardent leurs licences d'origine (voir [CREDITS.md](CREDITS.md)).
