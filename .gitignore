@@ -1,0 +1,11 @@
+# Résultats de compilation
+output/
+*.o
+*.nwa
+*.bin
+*.elf
+
+# Jeux : jamais dans le dépôt
+*.sms
+*.gg
+*.zip
