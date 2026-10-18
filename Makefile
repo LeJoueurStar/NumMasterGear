@@ -1,15 +1,10 @@
 # NumMasterGear (Master System / Game Gear) pour NumWorks - Makefile inspiré de l'exemple officiel
 # https://github.com/numworks/epsilon-sample-app-c
 #
-#   make clean && make build              ->  output/NumMasterGear.nwa, SANS sauvegarde
-#                                             (appli "NumMasterGear (test sans sauvegarde)")
-#   make clean && make build STORAGE=1    ->  avec sauvegarde (appli "NumMasterGear")
-#   make clean && make build BARE=1       ->  test minimal sans emulation ("NumMasterGear (test minimal)")
+#   make clean && make build              ->  output/NumMasterGear.nwa
 #   make check                            ->  vérifie que l'app se lie pour la calculatrice
 #                                             (échoue si elle demande trop de RAM)
 #
-# Les trois variantes servent a localiser un plantage a la sortie de l'appli
-# (voir README.txt, section "Diagnostic du plantage").
 
 Q ?= @
 
@@ -26,7 +21,6 @@ $(addprefix $(BUILD_DIR)/,$(addsuffix .o,$(basename $(1))))
 endef
 
 STORAGE ?= 1
-BARE ?= 0
 
 src = $(addprefix src/,main.c meta.c stubs.c) $(wildcard src/sms/*.c)
 ifeq ($(STORAGE),1)
@@ -39,12 +33,7 @@ CFLAGS = -std=gnu99
 CFLAGS += $(EADK_CFLAGS)
 CFLAGS += -O2 -Wall
 CFLAGS += -DLSB_FIRST=1 -DPLATFORM_DEVICE=1 -Isrc -Isrc/sms
-CFLAGS += -DNW_ENABLE_STORAGE=$(STORAGE) -DNW_BARE=$(BARE)
-ifeq ($(BARE),1)
-CFLAGS += -DNW_APP_NAME='"NumMasterGear (test minimal)"'
-else ifneq ($(STORAGE),1)
-CFLAGS += -DNW_APP_NAME='"NumMasterGear (test sans sauvegarde)"'
-endif
+CFLAGS += -DNW_ENABLE_STORAGE=$(STORAGE) -DNW_BARE=0
 
 LDFLAGS = -Wl,--relocatable
 LDFLAGS += -nostartfiles
