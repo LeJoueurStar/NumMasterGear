@@ -21,7 +21,6 @@ Il se présente comme une application `.nwa` : tu envoies l'application et ta RO
 | OK | Bouton 1 |
 | Retour | Bouton 2 |
 | Retour arrière | Pause (Master System) ; Start, donc pause (Game Gear) |
-| EXE | (non utilisée) |
 | π | Réinitialiser le jeu |
 | + / - | Remplir l'écran / taille d'origine |
 | 1 / 2 / 3 / 4 / . | Vitesse x1 / x2 / x3 / x4 / x1,5 |
@@ -65,4 +64,4 @@ Ce projet ne contient aucune ROM de jeu. Tu dois utiliser tes propres cartouches
 
 ## Licence
 
-À définir (voir [CREDITS.md](CREDITS.md) pour les licences des composants repris).
+Ce projet est distribué sous la licence **GPL-2.0** (voir [LICENSE](LICENSE)). Les composants repris gardent leurs licences d'origine (voir [CREDITS.md](CREDITS.md)).
