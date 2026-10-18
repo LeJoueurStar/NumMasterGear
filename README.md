@@ -64,4 +64,4 @@ Ce projet ne contient aucune ROM de jeu. Tu dois utiliser tes propres cartouches
 
 ## Licence
 
-Ce projet est distribué sous la licence **GPL-2.0** (voir [LICENSE](LICENSE)). Les composants repris gardent leurs licences d'origine (voir [CREDITS.md](CREDITS.md)).
+Ce projet est distribué sous la licence **GPL-3.0** (voir [LICENSE](LICENSE)). Les composants repris gardent leurs licences d'origine (voir [CREDITS.md](CREDITS.md)).
