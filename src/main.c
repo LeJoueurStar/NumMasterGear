@@ -519,8 +519,10 @@ int main(int argc, char *argv[])
            an earlier version did, meant it was silently never seen by the
            Game Gear I/O code no matter which key triggered it. */
         input.system = 0;
-        if(eadk_keyboard_key_down(k, eadk_key_exe))       input.system |= INPUT_PAUSE;
-        if(eadk_keyboard_key_down(k, eadk_key_backspace)) input.system |= INPUT_START;
+        /* Retour arriere is the pause/Start key on both consoles: on the Master
+           System it is the pause (NMI); on the Game Gear it is Start. EXE is not used. */
+        if(eadk_keyboard_key_down(k, eadk_key_backspace))
+            input.system |= IS_GG ? INPUT_START : INPUT_PAUSE;
 
         if(bitmap.viewport.changed)
         {

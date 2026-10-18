@@ -20,8 +20,8 @@ Il se présente comme une application `.nwa` : tu envoies l'application et ta RO
 | Flèches | Croix directionnelle |
 | OK | Bouton 1 |
 | Retour | Bouton 2 |
-| Retour arrière | Start (Game Gear) |
-| EXE | Pause (Master System uniquement ; sur Game Gear, utiliser Retour arrière) |
+| Retour arrière | Pause (Master System) ; Start, donc pause (Game Gear) |
+| EXE | (non utilisée) |
 | π | Réinitialiser le jeu |
 | + / - | Remplir l'écran / taille d'origine |
 | 1 / 2 / 3 / 4 / . | Vitesse x1 / x2 / x3 / x4 / x1,5 |
@@ -29,6 +29,12 @@ Il se présente comme une application `.nwa` : tu envoies l'application et ta RO
 | 0 | Sauvegarder et quitter |
 | Toolbox (maintenir ~1,5 s) | Effacer la sauvegarde du jeu en cours |
 | Accueil | Quitter sans sauvegarder |
+
+## Télécharger
+
+Dernière version : [NumMasterGear.nwa](https://github.com/LeJoueurStar/NumMasterGear/releases/latest/download/NumMasterGear.nwa)
+
+Puis installe-le sur [my.numworks.com/apps](https://my.numworks.com/apps) avec ta ROM (voir ci-dessous).
 
 ## Compilation
 
@@ -39,13 +45,6 @@ make clean && make build
 ```
 
 Le fichier produit est `output/NumMasterGear.nwa`.
-
-Pour compiler sans la sauvegarde (version de test) :
-
-```sh
-make clean && make build STORAGE=0
-```
-
 ## Installation
 
 1. Ouvre [my.numworks.com/apps](https://my.numworks.com/apps) et envoie `NumMasterGear.nwa`.
